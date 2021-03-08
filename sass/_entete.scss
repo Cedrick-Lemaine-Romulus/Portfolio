@@ -1,0 +1,66 @@
+/***************** ENTETE **********************/
+.entete{
+    background-image: linear-gradient(45deg, #3E5671, #4D637C);
+    // background-color: rgb(33, 129, 133);
+    height: 100vh;
+
+    
+}
+
+.logo{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    // -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.nom{
+    background-image: linear-gradient(45deg, #6abb7c, #35a0da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-family: "Archivo Black", sans-serif;
+    font-weight: normal;
+    font-size: 5em;
+    text-align: center;
+    margin: 0;
+    margin-bottom: -0.25em;
+    margin-left: 30vw;
+    padding-top: 3.5em;
+}
+
+.slogan {
+    background-image: linear-gradient(45deg, #6abb7c, #35a0da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-family: "Archivo Black", sans-serif;
+    font-weight: normal;
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 0;
+    margin-bottom: -0.25em;
+    margin-right: 6vw;
+}
+
+.suivant{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    bottom: 80px;
+    right: 90px;
+    border-radius: 10%;
+  
+    line-height: 50px;
+    color: #35a0da;
+    font-size: 10em;
+    transition: 0.5s;
+  }
+  
+  .suivant:hover {
+    color: #6abb7c;
+    transform: translateX(10px);
+  }

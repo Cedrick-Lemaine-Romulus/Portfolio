@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/***************** GENERAL **********************/
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    // font-family: 'Ubuntu', sans-serif;
+    background-image: linear-gradient(45deg, #32465c, #334152);
+    color: white;
+    overflow-x: hidden;
+    font-family: 'Lobster', cursive;    
+}
+
+h1{
+    text-align: center;
+    font-size: 3.5em;
+    padding-top: 0.5em;
+}

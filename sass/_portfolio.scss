@@ -1,0 +1,37 @@
+/***************** PORTFOLIO **********************/
+.portfolio{
+    // background-color: rgb(42, 212, 218);
+    margin-left: 26vw;
+}
+
+/***************** DIAPORAMA **********************/
+.diaporama {
+    height: 100vh;
+}
+
+.d1{
+  width: 73vw;
+  height: 100vh;
+  // margin: 0 auto 0 0;
+  // box-shadow: 0px 15px 10px -5px #777;
+  // background-color: #EDEDED;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: fondu 15s ease-in-out infinite both;
+}
+// .d1:hover{
+//   animation-play-state: paused;
+// }
+@keyframes fondu{
+  0%{background-image: url("../img/Axe.jpeg");}
+  33%{background-image: url("../img/gaunglet_knight_all.jpg");}
+  66%{background-image: url("../img/Preston_close.png");}
+  100%{background-image: url("../img/test2.jpg");}
+}
+
+/***************** MOSAIQUE **********************/
+
+.mosaique{
+  padding: 0.5em;
+  height: 100vh;
+}
