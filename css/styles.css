@@ -347,6 +347,13 @@ hr.separateur {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.aPropos h4 {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: bold;
+  font-style: italic;
+}
+
 .aPropos img {
   display: block;
   margin: 0 auto;
@@ -357,6 +364,7 @@ hr.separateur {
   background-color: royalblue;
   width: 23.75vw;
   font-size: 1.6em;
+  height: 55vh;
 }
 
 .interets {
@@ -364,6 +372,7 @@ hr.separateur {
   background-color: #1c3786;
   width: 23.75vw;
   font-size: 1.6em;
+  height: 55vh;
 }
 
 .competences {
@@ -371,6 +380,7 @@ hr.separateur {
   background-color: #31478b;
   width: 23.75vw;
   font-size: 1.6em;
+  height: 55vh;
 }
 
 /***************** CONTACT **********************/
