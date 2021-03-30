@@ -6,15 +6,29 @@ html{
 }
 
 body{
-    // font-family: 'Ubuntu', sans-serif;
     background-image: linear-gradient(45deg, #32465c, #334152);
     color: white;
     overflow-x: hidden;
-    font-family: 'Lobster', cursive;    
+    font-family: 'Lobster', cursive;
+    // min-width: 510px;
 }
 
 h1{
     text-align: center;
     font-size: 3.5em;
     padding-top: 0.5em;
+    font-family: 'Lobster', cursive;
+}
+
+/*****************************************************************************/
+/*************************   STYLE MOBILE   **********************************/
+/*****************************************************************************/
+
+@media (max-width : 520px) {
+
+    h1{
+        text-align: center;
+        font-size: 2.5em;
+        padding-top: 3em;
+    }
 }

@@ -19,6 +19,18 @@ h1 {
   text-align: center;
   font-size: 3.5em;
   padding-top: 0.5em;
+  font-family: 'Lobster', cursive;
+}
+
+/*****************************************************************************/
+/*************************   STYLE MOBILE   **********************************/
+/*****************************************************************************/
+@media (max-width: 520px) {
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 3em;
+  }
 }
 
 /***************** MENU **********************/
@@ -33,33 +45,107 @@ h1 {
   box-shadow: 2px 0 20px grey;
 }
 
-ul.menu {
+.navigation .menu {
   list-style-type: none;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
-ul.menu > li {
+.navigation .menu li {
   padding-bottom: 1em;
 }
 
-ul.menu > li > a {
+.navigation .menu li a {
   font-family: "Archivo Black", sans-serif;
   text-decoration: none;
-  color: white;
+  color: #88c4ec;
   font-size: 1.3em;
-  text-align: left;
+  text-align: right;
+  margin-right: 0.2em;
   display: block;
 }
 
-.logo-icon > a > img {
+.navigation .menu li:hover {
+  filter: drop-shadow(0px 0px 10px #88c4ec);
+}
+
+.logo-icon img {
   display: block;
   margin: 0 auto;
-  padding-bottom: 1.5em;
+}
+
+.logo-icon:hover {
+  filter: drop-shadow(0px 0px 10px #6abb7c);
+}
+
+.logo-icon span {
+  background-image: linear-gradient(45deg, #6abb7c, #35a0da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2em;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.logo-icon a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
 }
 
 hr.separateur {
-  border-top: 8px solid #bbb;
+  border-top: 5px solid #bbb;
   border-radius: 5px;
+  border-style: dashed;
+}
+
+/*****************************************************************************/
+/*************************   STYLE MOBILE   **********************************/
+/*****************************************************************************/
+@media (max-width: 520px) {
+  .navigation {
+    width: 100vw;
+    height: 15%;
+    z-index: 1;
+    padding: 0px;
+    box-shadow: 2px 0 20px grey;
+  }
+  .navigation .menu {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 1%;
+    width: 100%;
+  }
+  .navigation .menu li {
+    padding-bottom: 0;
+    display: inline;
+  }
+  .navigation .menu li a {
+    color: #88c4ec;
+    margin-top: 4.5em;
+    margin-left: 3.5em;
+    font-family: 'Lobster', cursive;
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .navigation .menu li:hover {
+    filter: drop-shadow(0px 0px 10px #88c4ec);
+  }
+  .logo-icon img {
+    width: 17%;
+  }
+  .logo-icon span {
+    font-size: 0.8em;
+    text-align: center;
+    margin: 0 auto;
+  }
+  hr.separateur {
+    display: none;
+  }
 }
 
 /* Page Accueil
@@ -124,11 +210,42 @@ hr.separateur {
   transform: translateX(10px);
 }
 
+/*****************************************************************************/
+/*************************   STYLE MOBILE   **********************************/
+/*****************************************************************************/
+@media (max-width: 520px) {
+  .logo {
+    top: 25%;
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    margin-left: 2%;
+  }
+  .nom {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: normal;
+    font-size: 3em;
+    text-align: center;
+    margin: 0;
+    display: block;
+    margin: 0 auto;
+    padding-top: 7.5em;
+  }
+  .slogan {
+    font-size: 2.5em;
+    text-align: center;
+    display: block;
+  }
+  .suivant {
+    right: 160px;
+  }
+}
+
 /* Page Portfolio
 --------------------------------------------- */
 /***************** PORTFOLIO **********************/
 .portfolio {
-  margin-left: 26vw;
+  margin-left: 25vw;
 }
 
 /***************** DIAPORAMA **********************/
@@ -137,25 +254,31 @@ hr.separateur {
 }
 
 .d1 {
-  width: 73vw;
+  width: 74vw;
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  animation: fondu 15s ease-in-out infinite both;
+  animation: fondu 50s ease-in-out infinite both;
 }
 
 @keyframes fondu {
   0% {
     background-image: url("../img/Axe.jpeg");
   }
-  33% {
+  20% {
     background-image: url("../img/gaunglet_knight_all.jpg");
   }
-  66% {
+  40% {
     background-image: url("../img/Preston_close.png");
   }
-  100% {
+  60% {
     background-image: url("../img/test2.jpg");
+  }
+  80% {
+    background-image: url("../img/camp_fire.png");
+  }
+  100% {
+    background-image: url("../img/Axe.jpeg");
   }
 }
 
@@ -163,6 +286,43 @@ hr.separateur {
 .mosaique {
   padding: 0.5em;
   height: 100vh;
+}
+
+/*****************************************************************************/
+/*************************   STYLE MOBILE   **********************************/
+/*****************************************************************************/
+@media (max-width: 520px) {
+  .portfolio {
+    margin-left: 0;
+    width: 100vw;
+  }
+  /***************** DIAPORAMA **********************/
+  .d1 {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: fondu 50s ease-in-out infinite both;
+  }
+  @keyframes fondu {
+    0% {
+      background-image: url("../img/camp_fire_mobile.png");
+    }
+    25% {
+      background-image: url("../img/Affiche_Finale_Mobile.png");
+    }
+    75% {
+      background-image: url("../img/Axe_mobile.png");
+    }
+    100% {
+      background-image: url("../img/camp_fire_mobile.png");
+    }
+  }
+  /***************** MOSAIQUE **********************/
+  .mosaique {
+    padding: 0.5em;
+    height: 220vh;
+  }
 }
 
 #hexGrid {
@@ -322,6 +482,7 @@ hr.separateur {
   /* <- 2-1  hexagons per row */
   #hexGrid {
     padding-bottom: 11.2%;
+    padding-left: 0px;
   }
   .hex {
     width: 50%;
@@ -347,6 +508,26 @@ hr.separateur {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.aPropos section {
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-start;
+}
+
+.aPropos section div {
+  width: 23vw;
+  font-size: 1.28em;
+  background-color: #455C76;
+  border-radius: 3%;
+  padding: 10px;
+  box-shadow: 0 0 5px 5px cadetblue;
+}
+
+.photoProfil {
+  width: 200px;
+  padding-bottom: 0.5em;
+}
+
 .aPropos h4 {
   text-align: center;
   font-size: 1.1em;
@@ -359,39 +540,40 @@ hr.separateur {
   margin: 0 auto;
 }
 
-.desc {
-  display: inline-block;
-  background-color: royalblue;
-  width: 23.75vw;
-  font-size: 1.6em;
-  height: 55vh;
+ul {
+  list-style-type: none;
 }
 
-.interets {
-  display: inline-block;
-  background-color: #1c3786;
-  width: 23.75vw;
-  font-size: 1.6em;
-  height: 55vh;
-}
-
-.competences {
-  display: inline-block;
-  background-color: #31478b;
-  width: 23.75vw;
-  font-size: 1.6em;
-  height: 55vh;
+/*****************************************************************************/
+/*************************   STYLE MOBILE   **********************************/
+/*****************************************************************************/
+@media (max-width: 520px) {
+  .aPropos {
+    height: 100vh;
+    margin-left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .aPropos .scrolling-wrapper {
+    width: 290vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: normal;
+  }
+  .aPropos .scrolling-wrapper .card {
+    display: inline-block;
+    width: 90vw;
+    height: 60vh;
+  }
+  .photoProfil {
+    width: 100px;
+    padding-bottom: 0.5em;
+  }
 }
 
 /***************** CONTACT **********************/
 .contact {
   height: 95vh;
   margin-left: 26vw;
-}
-
-.photoProfil {
-  width: 200px;
-  padding-bottom: 0.5em;
 }
 
 .infos > img {
@@ -412,13 +594,63 @@ hr.separateur {
   margin: 0 auto 3vh auto;
 }
 
+.info_mobile {
+  display: none;
+}
+
+/*****************************************************************************/
+/*************************   STYLE MOBILE   **********************************/
+/*****************************************************************************/
+@media (max-width: 520px) {
+  .contact {
+    height: 95vh;
+    margin-left: 0;
+  }
+  .infos {
+    display: none;
+  }
+  .infos img {
+    width: 70px;
+    margin-left: 2vw;
+  }
+  .infos span {
+    font-size: 2em;
+    width: fit-content;
+    display: inline-block;
+    margin-left: 1.5vw;
+  }
+  .formulaire {
+    display: block;
+    width: 90vw;
+    margin: 0 auto 3vh auto;
+  }
+  .info_mobile {
+    display: block;
+  }
+  .info_mobile div img {
+    display: inline-block;
+    margin: 0 2.85em 2em 2.85em;
+    width: 50px;
+  }
+}
+
 /***************** FOOTER **********************/
 footer {
   height: 50px;
   margin-left: 26vw;
 }
 
-footer > p {
+footer p {
   margin: 0;
   text-align: center;
+}
+
+/*****************************************************************************/
+/*************************   STYLE MOBILE   **********************************/
+/*****************************************************************************/
+@media (max-width: 520px) {
+  footer {
+    height: 50px;
+    margin-left: 0;
+  }
 }

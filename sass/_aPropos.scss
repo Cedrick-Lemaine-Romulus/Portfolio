@@ -4,6 +4,28 @@
     height: 100vh;
     margin-left: 26vw;
     font-family: Arial, Helvetica, sans-serif;
+
+    section {
+        // background-color: royalblue;
+        display: flex;
+        justify-content: space-around;
+        align-content: flex-start;
+
+        div {
+            width: 23vw;
+            font-size: 1.28em;
+            background-color: #455C76;
+            border-radius: 3%;
+            padding: 10px;
+            box-shadow: 0 0 5px 5px cadetblue;
+
+        }
+    }
+}
+
+.photoProfil{
+    width: 200px;
+    padding-bottom: 0.5em;
 }
 
 .aPropos h4{
@@ -18,24 +40,67 @@
     margin: 0 auto;  
 }
 
-.desc{
-    display: inline-block;
-    background-color: royalblue;
-    width: 23.75vw;
-    font-size: 1.6em;
-    height: 55vh;
+ul {
+    list-style-type: none;
 }
-.interets{
-    display: inline-block;
-    background-color: rgb(28, 55, 134);
-    width: 23.75vw;
-    font-size: 1.6em;
-    height: 55vh;
-}
-.competences{
-    display: inline-block;
-    background-color: rgb(49, 71, 139);
-    width: 23.75vw;
-    font-size: 1.6em;
-    height: 55vh;
+
+/*****************************************************************************/
+/*************************   STYLE MOBILE   **********************************/
+/*****************************************************************************/
+
+@media (max-width : 520px) {
+
+    .aPropos{
+        // background-color: rgb(14, 92, 95);
+        height: 100vh;
+        margin-left: 0;
+        font-family: Arial, Helvetica, sans-serif;
+
+        .scrolling-wrapper {
+            width: 290vw;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: normal;
+          
+            .card {
+              display: inline-block;
+              width: 90vw;
+              height: 60vh;
+            }
+          }
+    
+        // section {
+        //     background-color: royalblue;
+
+        //     width: 20wv
+        //     height: 60vh;
+        //     // margin-left: 2vw;
+        //     // display: flex;
+        //     // -webkit-overflow-scrolling: touch;
+        //     // scroll-snap-type: x mandatory;
+        //     // overflow: auto;
+        //     overflow-y: hidden;
+        //     // white-space: nowrap;
+    
+        //     div {
+        //         width: 7em;
+        //         // font-size: 1.28em;
+        //         // background-color: cadetblue;
+        //         // padding: 10px;
+        //         // text-align: center;
+        //         // margin-left: 5em;
+
+        //         display: inline-block;
+        //         color: white;
+        //         text-align: center;
+        //         padding: 14px;
+        //         text-decoration: none;
+        //     }
+        // }
+    }
+    
+    .photoProfil{
+        width: 100px;
+        padding-bottom: 0.5em;
+    }
 }
